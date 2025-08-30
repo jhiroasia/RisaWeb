@@ -1,12 +1,18 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0; padding: 0;
+  
 }
 header {
-  background: #02f1f1;
-  color: white;
-  padding: 1rem;
-  text-align: center;
+  background-image: url("images/pixelsmall.gif");
+  background-size: cover;      /* make it fill header */
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 350px;               /* adjust size of header */
+  color: white;                /* so text is visible */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 nav {
   display: flex;
@@ -26,10 +32,17 @@ nav a {
   padding: 20px;
 }
 .product {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+  gap: 20px; /* space between items */
+}
+
+.product-item {
   border: 1px solid #ddd;
+  padding: 15px;
   border-radius: 8px;
-  padding: 10px;
   text-align: center;
+  background: #fff;
 }
 .product img {
   width: 200px;
@@ -48,3 +61,15 @@ footer {
   padding: 1rem;
   margin-top: 20px;
 }
+
+p {
+  margin-bottom: 20px; /* adds spacing under each price */
+}
+
+.item {
+  margin-bottom: 30px; /* spacing between items */
+}
+html {
+  scroll-behavior: smooth;
+}
+
