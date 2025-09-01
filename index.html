@@ -353,25 +353,28 @@
     <a href = "https://www.instagram.com/ppcuanshop_/">Instagram</a>
     <p>Discord : RisAmmonite#2190</p>
   </footer>
-<button id="backToTop">↑ Top</button>
-<script>
-  const btn = document.getElementById("backToTop");
+<!-- your page content -->
 
-  window.onscroll = function () {
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-      btn.style.display = "block";
-    } else {
-      btn.style.display = "none";
-    }
-  };
+  <img id="backToTop" src="images/logo.png" alt="Back to top">
+  
+  <script>
+    const btn = document.getElementById("backToTop");
 
-  btn.onclick = function () {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  };
-</script>
+    window.onscroll = function () {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+
+    btn.onclick = function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    };
+  </script>
 
 </body>
 </html>
