@@ -6,8 +6,9 @@
   <title>Shopping Website</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
+
+<body>
   <header>
     <h1>Rose Marine Soda</h1>
   </header>
@@ -23,22 +24,26 @@
       <a href="#strimpack4">Add ons</a>
       <a href="#strimpack5">Commercial use</a>
       <a href="#minecraft">Minecraft</a>
+      <div class="search-wrapper">
+        <label for="siteSearch" class="visually-hidden">Search products</label>
+        <input id="siteSearch" type="search" placeholder="🔎🔎" aria-label="Search products">
+      </div>
+      
     </div>  
   </nav>
 
 <!--THIS IS FOR BIG TITLE-->
 <section id = "T1" class = "container">
-  <div class ="product-wide">
+  <div class ="product-wide category-header">
     <!-- product item -->
      <div class = "product-item2">
       <h4>CHIBI</h4>
      </div>
   </div>
 </section>
-<section id = "T1" class="container">
   <div class="product">
     <!-- product item -->
-    <div class="product-item">
+    <div class="product-item" data-tags="chibi halfbody bw blackwhite">
       <img src="images/Chibi/1246039905_169.jpeg" alt="Product">
       <h4>Chibi Half Body (B/W)</h4>
       <p>$5 / Rp 35.000</p>
@@ -46,7 +51,7 @@
     </div>
 
     <!-- product item -->
-    <div class="product-item">
+    <div class="product-item" data-tags="chibi fullbody bw blackwhite">
       <img src="images/Chibi/1246039905_169.jpeg" alt="Product">
       <h4>Chibi Full Body (B/W)</h4>
       <p>$8 / Rp 60.000</p>
@@ -54,7 +59,7 @@
     </div>
 
     <!-- product item -->
-    <div class="product-item">
+    <div class="product-item" data-tags="chibi fullbody colored">
       <img src="images/Chibi/1246039905_169.jpeg" alt="Product">
       <h4>Chibi Fullbody Colored</h4>
       <p>$10 / Rp 85.000</p>
@@ -66,17 +71,16 @@
 
 <!--THIS IS FOR BIG TITLE-->
 <section id = "T2" class = "container">
-  <div class ="product-wide">
+  <div class ="product-wide category-header">
     <!-- product item -->
      <div class = "product-item2">
       <h4>SEMI - REALISM</h4>
      </div>
   </div>
 </section>
-<section id = "T2" class="container">
   <div class="product">
     <!-- product item -->
-    <div class="product-item">
+    <div class="product-item" data-tags="semi realistic sketch headshot bw blackwhite black white colored">
       <img src="images/Semi-Realistic Headshot sketch.jpg" alt="Product">
       <h4>Semi-Realistic Headshot Sketch</h4>
       <p>$6 / Rp 50.000</p>
@@ -84,14 +88,14 @@
     </div>
 
     <!-- product item -->
-    <div class="product-item">
+    <div class="product-item" data-tags="semi realistic halfbody blackwhite black white colored">
       <img src="images/Semi/patrick.jpg" alt="Product">
       <h4>Semi-Realistic Halfbody Sketch</h4>
       <p>$10 / Rp 80.000</p>
       <button>Add to Cart</button>
     </div>
     <!-- product item -->
-    <div class="product-item">
+    <div class="product-item" data-tags="semi realistic headshot blackwhite black white colored">
       <img src="images/Semi/patrick.jpg" alt="Product">
       <h4>Semi-Realistic Headshot</h4>
       <p>$12 / Rp 70.000</p>
@@ -99,7 +103,7 @@
     </div>
 
     <!-- product item -->
-    <div class="product-item">
+    <div class="product-item" data-tags="semi realistic halfbody blackwhite black white colored">
       <img src="images/Semi/patrick.jpg" alt="Product">
       <h4>Semi-Realistic Halfbody</h4>
       <p>$18 / Rp 130.000</p>
@@ -107,7 +111,7 @@
     </div>
 
     <!-- product item -->
-    <div class="product-item">
+    <div class="product-item" data-tags="semi realistic thigh blackwhite black white colored">
       <img src="images/Semi/patrick.jpg" alt="Product">
       <h4>Semi-Realistic Thigh-Up</h4>
       <p>$25 / Rp 170.000</p>
@@ -115,7 +119,7 @@
     </div>
 
     <!-- product item -->
-     <div class="product-item">
+     <div class="product-item" data-tags="semi realistic fullbody blackwhite black white colored">
       <img src="images/Semi/patrick.jpg" alt="Product">
       <h4>Semi-Realistic Fullbody</h4>
       <p>$35 / Rp 220.000</p>
@@ -126,7 +130,7 @@
 
 <!--THIS IS FOR BIG TITLE-->
 <section id = "T3" class = "container">
-  <div class ="product-wide">
+  <div class ="product-wide category-header">
     <!-- product item -->
      <div class = "product-item2">
       <h4>Streamer & Commercial Pack</h4>
@@ -137,7 +141,7 @@
 <section id = "strimpack" class="container">
   <div class="product">
     <!-- product item -->
-    <div class="product-item">
+    <div class="product-item" data-tags="stream image set standard idle talking open closed mouth">
       <img src="images/Semi-Realistic Headshot sketch.jpg" alt="Product">
       <h4>Standard 2-Image Set</h4>
       <p>$20 / Rp 150.000</p>
@@ -146,7 +150,7 @@
     </div>
 
     <!-- product item -->
-    <div class="product-item">
+    <div class="product-item" data-tags="stream expression pack blush angry sad smug ">
       <img src="images/Semi/patrick.jpg" alt="Product">
       <h4>Expression Pack (4-6 images)</h4>
       <p>$35-$60 / Rp 300.000 - Rp 500.000</p>
@@ -154,7 +158,7 @@
       <button>Add to Cart</button>
     </div>
     <!-- product item -->
-    <div class="product-item">
+    <div class="product-item" data-tags="stream expression">
       <img src="images/Semi/patrick.jpg" alt="Product">
       <h4>Extra Expression</h4>
       <p>$7-$10 / +Rp 50.000</p>
@@ -163,7 +167,7 @@
     </div>
 
     <!-- product item -->
-    <div class="product-item">
+    <div class="product-item" data-tags="stream alternate optional outfit acccessory">
       <img src="images/Semi/patrick.jpg" alt="Product">
       <h4>Alternate Outfit / Accessory</h4>
       <p>$10-$15 / +Rp 70.000 - Rp 120.000</p>
@@ -178,7 +182,7 @@
 <section id = "strimpack2" class="container">
   <div class="product">
     <!-- product item -->
-    <div class="product-item">
+    <div class="product-item" data-tags="stream profile banner streaming">
       <img src="images/Semi-Realistic Headshot sketch.jpg" alt="Product">
       <h4>Stream/Profile Banner</h4>
       <p>$30-$60 / Rp 400.000 - Rp 700.000</p>
@@ -186,14 +190,14 @@
     </div>
 
     <!-- product item -->
-    <div class="product-item">
+    <div class="product-item" data-tags="stream overlay cam frame chatbox streaming">
       <img src="images/Semi/patrick.jpg" alt="Product">
       <h4>Stream Overlay (cam frame, chatbox, dsb)</h4>
       <p>$50-$100 / Rp 600.000 - Rp 1.200.000</p>
       <button>Add to Cart</button>
     </div>
     <!-- product item -->
-    <div class="product-item">
+    <div class="product-item" data-tags="stream bundle badges emotes streaming">
       <img src="images/Semi/patrick.jpg" alt="Product">
       <h4>Streamer Pack Bundle (banner + badges + emotes)</h4>
       <p>Start from $80 / Start from Rp 800.000</p>
@@ -206,7 +210,7 @@
 <section id = "strimpack3" class="container">
   <div class="product">
     <!-- product item -->
-    <div class="product-item">
+    <div class="product-item" data-tags="stream emote sticker discord streaming">
       <img src="images/Semi-Realistic Headshot sketch.jpg" alt="Product">
       <h4>1 emote only</h4>
       <p>$5 / Rp 30.000</p>
@@ -214,14 +218,14 @@
     </div>
 
     <!-- product item -->
-    <div class="product-item">
+    <div class="product-item" data-tags="stream emote sticker discord streaming">
       <img src="images/Semi/patrick.jpg" alt="Product">
       <h4>3 emotes</h4>
       <p>$14 / Rp 85.000</p>
       <button>Add to Cart</button>
     </div>
     <!-- product item -->
-    <div class="product-item">
+    <div class="product-item" data-tags="stream emote sticker discord streaming">
       <img src="images/Semi/patrick.jpg" alt="Product">
       <h4>6 emotes</h4>
       <p>$26 / Rp 165.000</p>
@@ -234,7 +238,7 @@
 <section id = "strimpack4" class="container">
   <div class="product">
     <!-- product item -->
-    <div class="product-item">
+    <div class="product-item" data-tags="animated stream emote sticker discord streaming">
       <img src="images/Semi-Realistic Headshot sketch.jpg" alt="Product">
       <h4>1 emote 2 frame only</h4>
       <p>$10 / Rp 75.000</p>
@@ -242,14 +246,14 @@
     </div>
 
     <!-- product item -->
-    <div class="product-item">
+    <div class="product-item" data-tags="animated stream emote sticker discord streaming">
       <img src="images/Semi/patrick.jpg" alt="Product">
       <h4>3 emotes</h4>
       <p>$34 / Rp 220.000</p>
       <button>Add to Cart</button>
     </div>
     <!-- product item -->
-    <div class="product-item">
+    <div class="product-item" data-tags="animated stream emote sticker discord streaming">
       <img src="images/Semi/patrick.jpg" alt="Product">
       <h4>6 emotes</h4>
       <p>$66 / Rp 435.000</p>
@@ -257,7 +261,7 @@
     </div>
 
     <!-- product item -->
-    <div class="product-item">
+    <div class="product-item" data-tags="animated smooth stream emote sticker discord streaming">
       <img src="images/Semi/patrick.jpg" alt="Product">
       <h4>1 emote smooth (6-12 frame)</h4>
       <p>$20-$30 /  Rp 150.000- Rp 200.000</p>
@@ -375,6 +379,109 @@
       });
     };
   </script>
+<script>
+(function(){
+  const input = document.getElementById('siteSearch');
+  const productItems = Array.from(document.querySelectorAll('.product-item'));
+  const headers = Array.from(document.querySelectorAll('.category-header'));
+
+  // debounce helper to limit how often search runs
+  function debounce(fn, wait = 180) {
+    let t;
+    return (...args) => {
+      clearTimeout(t);
+      t = setTimeout(() => fn.apply(this, args), wait);
+    };
+  }
+
+  function normalize(s) {
+    return s ? s.toLowerCase().normalize('NFKD') : '';
+  }
+
+  // remove previous highlights
+  function removeHighlights(el) {
+    el.querySelectorAll('.match').forEach(node => {
+      node.replaceWith(document.createTextNode(node.textContent));
+    });
+  }
+
+  // highlight matching text
+  function highlightMatch(itemEl, term) {
+    removeHighlights(itemEl);
+    if (!term) return;
+    const fields = itemEl.querySelectorAll('h4, p');
+    const low = term.toLowerCase();
+    for (const field of fields) {
+      const text = field.textContent;
+      const idx = text.toLowerCase().indexOf(low);
+      if (idx >= 0) {
+        const before = text.slice(0, idx);
+        const match = text.slice(idx, idx + term.length);
+        const after = text.slice(idx + term.length);
+        field.innerHTML = '';
+        field.appendChild(document.createTextNode(before));
+        const span = document.createElement('span');
+        span.className = 'match';
+        span.textContent = match;
+        field.appendChild(span);
+        field.appendChild(document.createTextNode(after));
+        break;
+      }
+    }
+  }
+
+  function filterProducts() {
+    const q = normalize(input.value.trim());
+
+    // show everything if search empty
+    if (!q) {
+      productItems.forEach(it => {
+        it.classList.remove('hidden');
+        removeHighlights(it);
+      });
+      headers.forEach(h => h.classList.remove('hidden'));
+      return;
+    }
+
+    // hide all first
+    productItems.forEach(it => it.classList.add('hidden'));
+    headers.forEach(h => h.classList.add('hidden'));
+
+    // find matching products
+    const matches = [];
+    productItems.forEach(it => {
+      const tags = it.getAttribute('data-tags') || '';
+      const text = normalize(it.textContent + ' ' + tags);
+      if (text.indexOf(q) !== -1) {
+        it.classList.remove('hidden');
+        highlightMatch(it, input.value.trim());
+        matches.push(it);
+      } else {
+        removeHighlights(it);
+      }
+    });
+
+    // show corresponding category headers for matched products
+    matches.forEach(it => {
+      const section = it.closest('section');
+      if (!section) return;
+      const header = section.previousElementSibling?.querySelector('.category-header');
+      if (header) header.classList.remove('hidden');
+    });
+  }
+
+  input.addEventListener('input', debounce(filterProducts, 160));
+
+  // optional: Enter key focuses first visible item
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      const first = document.querySelector('.product-item:not(.hidden) button');
+      if (first) first.focus();
+    }
+  });
+})();
+</script>
+
 
 </body>
 </html>

@@ -104,3 +104,46 @@ h3{
   z-index: 1000;
 }
 
+.visually-hidden {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+.search-wrapper {
+  padding: 0.4rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex; /* change to flex-start if you want left aligned */
+}
+
+#siteSearch {
+  width: min(600px, 90%);
+  max-width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  transition: box-shadow .15s ease, border-color .15s ease;
+}
+
+#siteSearch:focus {
+  border-color: #6a45be;
+  box-shadow: 0 4px 12px rgba(106,69,190,0.12);
+}
+
+/* optional: when product is hidden */
+.product-item.hidden {
+  display: none !important;
+}
+
+/* optional match highlight (simple) */
+.product-item .match { 
+  background: yellow;
+  padding: 0 2px;
+  border-radius: 2px;
+}
